@@ -1,0 +1,28 @@
+#podnaslovi{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    padding: 30px;
+    margin: 10px;
+    align-self: center;
+    text-align: center;
+    color: darkslategray;
+    background-color: beige;
+}
+#parent{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    margin: 10px;
+    color: darkslategray;
+    background-color: beige;
+}
+.child{
+    gap: 10px;
+    padding: 30px;
+    margin: 10px;
+    border-radius: 10px;
+    border-color: firebrick;
+}
