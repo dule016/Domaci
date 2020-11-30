@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pocetna</title>
-    <link rel="stylesheet" type="text/css" href="styles/style1.css">
-</head>
-<body>
-    <div id="naslovna">
-    <div id="desno">
-        <h1>Naslov prodavnice</h1>
-        <br>
-        <div id="podnaslovi">
-            <div class="podnasloviKlasa"><h3>Podnaslov 1</h3></div>
-            <div class="podnasloviKlasa"><h3>Podnaslov 2</h3></div>
-        </div>
-        <br>
-       
-        <div id = "parent">
-        <div class = "child"><h4>Artikal 1</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptas quisquam mollitia molestias, ipsum corporis magnam. Dolor voluptatem voluptatibus asperiores voluptas non veritatis aliquid distinctio dolore voluptatum sapiente? Dicta, corporis!</p>
-        </div>
-        <div class = "child">
-            <h4>Artikal 2</h4>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae facilis veritatis tenetur perferendis, porro molestiae expedita ea tempore sequi ipsam iste nisi numquam officiis eos sed, delectus illum optio repellat.</p>
-        </div>
-        <div class = "child">
-            <h4>Artikal 3</h4>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo, assumenda saepe veniam illo sit iure, fugit veritatis sequi tempore optio molestiae voluptas eveniet perspiciatis, at eos ex alias cumque cupiditate.</p>
-        </div>
-        <div class = "child">
-            <h4>Artikal 4</h4>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio consectetur veritatis qui sint sequi inventore impedit cupiditate error accusantium adipisci. Nisi velit neque, provident tenetur laborum placeat asperiores veritatis harum.</p>
-        </div>
-    </div>
-    <div id = "levo">
-      
-       
-  </div>
-   </div>
-</body>
+<html>
+  <head>
+    <title>Add Map</title>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap&libraries=&v=weekly"
+      defer
+    ></script>
+    <style type="text/css">
+      /* Set the size of the div element that contains the map */
+      #map {
+        height: 400px;
+        /* The height is 400 pixels */
+        width: 100%;
+        /* The width is the width of the web page */
+      }
+    </style>
+    <script>
+      // Initialize and add the map
+      function initMap() {
+        // The location of Uluru
+        const uluru = { lat: -25.344, lng: 131.036 };
+        // The map, centered at Uluru
+        const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 4,
+          center: uluru,
+        });
+        // The marker, positioned at Uluru
+        const marker = new google.maps.Marker({
+          position: uluru,
+          map: map,
+        });
+      }
+    </script>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <!--The div element for the map -->
+    <div id="map"></div>
+  </body>
 </html>

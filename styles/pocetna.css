@@ -1,71 +1,52 @@
-.div-2{
-    background-color: gray;
-    color: white;
-    padding: 30px;
-    margin: 10px;
-    flex: 8;
-    flex-basis: 300px;
-    align-self: stretch;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-between;
-    order: 0;
-    display: flex;
-    flex-wrap: nowrap;
+.parent{
+  display: grid;
+  flex-wrap: nowrap;
 }
 .div-1{
-    background-color: gray;
-    color: white;
-    padding: 30px;
-    margin: 10px;
-    flex: 1;
-    flex-basis: 300px;
-    align-self: stretch;
-    border-radius: 10px;
-    align-items: center;
-    justify-content: space-between;
-    order: 0;
-    display: flex;
-    flex-wrap: nowrap;
+  width: 100%;
+  padding: 10px;
+  margin: 10px;
+  height: 100vh;
+  background-color: lightskyblue;
+  color: black;
+  font-size: 30px;
+  text-align: center;
+  justify-content: center;
 }
-.parent{
-    display: flex;
-    flex-wrap: wrap;
-    height: 100vh; 
-    justify-content: space-between;
-    /* flex-direction: row; */
+form{
+  font-size: 18px;
 }
 #meni{ 
-    display: block;
-    width: 300px;
-    height: 100vh; 
+  display: block;
+  width: 300px;
+  height: 100vh; 
 } 
 ul { 
-    list-style: none; 
-    margin: 0; 
-    padding: 0; 
-    } 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+  } 
 li { 
-    border-bottom: 1px solid gray; 
-    } 
+  border-bottom: 1px solid gray; 
+  } 
 li a:link,li a:visited { 
-    font: size 22;; 
-    display: block; 
-    padding: 0.4em 0 0.4em 0.5em; 
-    border-left: 12px solid darkblue; 
-    border-right: 1px solid darkblue; 
-    background-color: black; 
-    color: #FFFFFF; 
-    text-decoration: none; 
-    }
+  font: size 22;; 
+  display: block; 
+  padding: 0.4em 0 0.4em 0.5em; 
+  border-left: 12px solid darkblue; 
+  border-right: 1px solid darkblue; 
+  background-color: black; 
+  color: #FFFFFF; 
+  text-decoration: none; 
+  }
 li a:hover { background-color: darkblue;
-        color: #FFFFFF;
+      color: #FFFFFF;
 }
-
 * {box-sizing:border-box}
 
 /* Slideshow container */
 .slideshow-container {
+  background-color: lightskyblue;
   max-width: 1000px;
   position: relative;
   margin: auto;
@@ -73,7 +54,7 @@ li a:hover { background-color: darkblue;
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: none
 }
 
 /* Next & previous buttons */
@@ -108,7 +89,7 @@ li a:hover { background-color: darkblue;
   color: #f2f2f2;
   font-size: 15px;
   padding: 8px 12px;
-  position: relative;
+  position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
@@ -119,7 +100,7 @@ li a:hover { background-color: darkblue;
   color: #f2f2f2;
   font-size: 12px;
   padding: 8px 12px;
-  position: relative;
+  position: absolute;
   top: 0;
 }
 

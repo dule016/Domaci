@@ -1,0 +1,49 @@
+
+#parent{
+    display: grid;
+}
+h1{
+    font-size: 70px;
+    color: white;
+}
+.kont{
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    height: 100vh;
+    background-color: lightskyblue;
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+}
+#naslov{
+    background-image: url('../slike/call_centre.jpg');
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 100%;
+    background-size: cover;
+    
+}
+img{
+    padding: 10px;
+    margin: 10px;
+}
+#mail{
+    display: inline;
+    border-color: black;
+    border-style: double;
+    border-width: 3px;
+    background-color: lightseagreen;
+}
+#mapaHeder{
+    background-color: lightskyblue;
+    padding: 10px;
+    margin: 10px;
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
