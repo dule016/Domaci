@@ -26,3 +26,9 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
 }
+ function otvoriAlert(){
+     alert('Uspesno ste narucili!');
+ }
+
+ var btnKlik=document.getElementById('dugmeNaruci');
+ btnKlik.addEventListener('click',otvoriAlert);
