@@ -1,3 +1,31 @@
+/*Ivar btnKlik=document.getElementById('dugmeNaruci');
+btnKlik.addEventListener('click',otvoriAlert);*/
+
+function validirajFormu(){
+  var mail = document.forms["forma"]["mail"].value;
+  if (mail == "") {
+    alert("Mail mora biti popunjen");
+    return false;
+  }
+  var ime = document.forms["forma"]["imePrezime"].value;
+  if (ime == "") {
+    alert("Ime i prezime moraju biti popunjeni");
+    return false;
+  }
+  var adresa = document.forms["forma"]["adresa"].value;
+  if (adresa == "") {
+    alert("Adresa mora biti popunjena");
+    return false;
+  }
+  var n = mail.includes('@');
+  if(n == 0){
+    alert("Nije ispravno unesen mail");
+    return false;
+  }
+  alert("Uspesno popunjena forma");
+  return true;
+}
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,6 +57,3 @@ function showSlides(n) {
  function otvoriAlert(){
      alert('Uspesno ste narucili!');
  }
-
- var btnKlik=document.getElementById('dugmeNaruci');
- btnKlik.addEventListener('click',otvoriAlert);

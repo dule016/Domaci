@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pocetna</title>
     <link rel="stylesheet" type="text/css" href="styles/pocetna.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.css">
 </head>
 
 <body>
-    <script src="js/pocetna.js"></script>
-<div class="parent">
+    
+    <div class="parent">
       
       <div id="naslov">
         <h1>Dobrodosli na sajt prodavnice duseka Matrex!</h1>
@@ -68,7 +69,7 @@
 </div>
     <div class="div-1">
       <h1>Forma za porucivanje</h1>
-      <form>
+      <form name="forma" onsubmit="return validirajFormu(), hidden" id="forma">
           <label for="imePrezime">Ime i prezime:</label>
           <br>
           <input type="text" id="imePrezime">
@@ -97,7 +98,7 @@
           <br>
           <label for="velicina">Velicina:</label>
           <br>
-          <input type="radio" id="ks" name="velicina" value="king">
+          <input type="radio" id="ks" name="velicina" value="king" checked>
           <label for="King">King size</label><br>
           <input type="radio" id="qs" name="velicina" value="queen">
           <label for="queen">Queen size</label>
@@ -125,11 +126,15 @@
           <br>
           <input type="submit" value="Naruci" id="dugmeNaruci">
           <input type="reset" value="Obrisi" id="dugmeClear">
+          <br>
+          <label id="sakriveni-element" style="display:none">Uspesno obavljena kupovina</label>
       </form>
   </div>
 </div>
 
-
-
+<h2 class="demoHeaders">Datepicker</h2>
+<div id="datepicker"></div>
+<script src="js/pocetna.js"></script>
+<script src="js/jquery-ui.js"></script>
 </body>
 </html>

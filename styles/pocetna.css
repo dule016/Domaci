@@ -1,7 +1,7 @@
 .parent{
   display: grid;
 }
-.naslov{
+#naslov{
   background-image: url('../slike/pocetna.jpg');
   background-color: lightslategrey;
   width: 100%;
