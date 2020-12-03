@@ -4,6 +4,7 @@
 #naslov{
   background-image: url('../slike/pocetna.jpg');
   background-color: lightslategrey;
+  color: white;
   width: 100%;
   padding: 10px;
   margin: 10px;
