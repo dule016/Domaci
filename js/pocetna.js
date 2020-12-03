@@ -23,7 +23,7 @@ function validirajFormu(){
     return false;
   }
   alert("Uspesno popunjena forma");
-  return true;
+  document.getElementById("formaPor").reset();
 }
 
 var slideIndex = 1;
