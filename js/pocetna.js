@@ -13,10 +13,11 @@ function update(){
 var d = new Date();
 var n = days[d.getDay()];
 var x = document.getElementById("demo");
+if(x){
 var h = addZero(d.getHours());
 var m = addZero(d.getMinutes());
 var s = addZero(d.getSeconds());
-x.innerHTML =n +", "+ h + ":" + m + ":" + s;
+x.innerHTML =n +", "+ h + ":" + m + ":" + s; }
 
 }
 window.addEventListener("load", function(){
@@ -55,12 +56,11 @@ function validirajFormu(){
 var slideIndex = 1;
 showSlides(slideIndex);
 
-// Next/previous controls
+
 function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }
