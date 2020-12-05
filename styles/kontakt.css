@@ -1,0 +1,86 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(20, 150, 173);
+  }
+  
+  .active {
+    background-color: #0f0c9e;
+  }
+
+  .main{
+    background-image: url('../slike/Contact-us-3.jpg');
+    background-repeat: no-repeat;
+    width:100%;
+    height: 300px;
+  }
+  .kn{
+    color: white;
+    font-size: 50px;
+    margin:auto;
+    text-align: center;
+  }
+
+  .email{
+      color:white;
+      font-size: 30px;
+      margin:auto;
+      text-align: center;
+    font-style: italic;
+    font-family: "Palatino Linotype", "Book Antiqua",  serif;
+  }
+
+  .where{
+    font-family: "Palatino Linotype", "Book Antiqua",  serif;
+    font-style: italic;
+    color: #3a6a92;
+    font-size: 35px;
+    text-align: center;
+
+    margin-left: auto;
+    margin-right:auto;
+    width: 255px;
+    border: 5px;
+    border:solid;
+    border-color: rgb(107, 106, 177);
+    margin-top: 10px;
+    border-radius: 25px;
+    background-color:transparent ;
+    display: block;
+  }
+.adr{
+    font-family: "Palatino Linotype", "Book Antiqua",  serif;
+    font-style: italic;
+    color: #3a6a92;
+    font-size: 25px ;
+    text-align: center;
+}
+.mapa{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kalendar{
+  text-align: center;
+  color: #3a6a92;
+  font-family: "Palatino Linotype", "Book Antiqua",  serif;
+}

@@ -1,0 +1,51 @@
+.first{
+    background-image: url('../slike/onama2.jpg');
+    background-repeat: no-repeat;
+    width:100%;
+    height: 300px;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(51, 51, 51);
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover:not(.active) {
+    background-color: rgb(20, 150, 173);
+  }
+  
+  .active {
+    background-color: #0f0c9e;
+  }
+
+  .onm{
+      color: white;
+      font-size: 50px;
+      margin:auto;
+  }
+
+  .paraf{
+    color: #01101f;
+    font-family: "Palatino Linotype", "Book Antiqua",  serif;
+    font-style: italic;
+    font-size: 20px;
+    padding: 100px;
+}
+
+.story{
+    background-color: rgb(163, 184, 204);
+}

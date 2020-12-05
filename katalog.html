@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Katalog</title>
+        <link rel="stylesheet" type="text/css" href="styles/style2.css">
+    </head>
+
+<body>
+    <header>
+        <nav>
+            <div class="navigacija">
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li ><a class="active" href="katalog.html">Katalog</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li><a href="ONama.html">O Nama</a></li>
+                    
+                  </ul>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class>
+            <img src="slike/LP-duseci-1.jpg" class="slika2">
+        </div>
+        
+        <div class="king">
+           <p class="paraf" style="text-align: center;">King size</p> 
+            <hr>
+            <p style="text-align:center" class="opis">Dušeci veličine 193 X 203.5CM, od najfinijih materijala.</p>
+            <div class="container">
+                <div class="d1"><img src="slike/King1.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 70000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: KL1</p>
+                </div>
+                <div class="d2"><img src="slike/King2.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 90000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: KL2</p>
+                </div>
+                <div class="d3"><img src="slike/magni-1.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 110000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: KL3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="queen">
+            <p class="paraf" style="text-align: center;">Queen size</p> 
+            <hr>
+            <p style="text-align:center" class="opis">Dušeci veličine 152 X 203.5CM, naši najprodavaniji.</p>
+            <div class="container">
+                <div class="d1"><img src="slike/Queen1.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 50000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: QL1</p>
+                </div>
+                <div class="d2"><img src="slike/Queen2.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 70000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: QL2</p>
+                </div>
+                <div class="d3"><img src="slike/Queen3.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 90000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: QL3</p>
+                </div>
+            </div>
+        </div>
+        <div class="singl">
+            <p class="paraf" style="text-align: center;">Small single</p> 
+            <hr>
+            <p style="text-align:center" class="opis">Dušeci veličine 76.2 X 190.5CM, namenjeni za jednu osobu.</p>
+            <div class="container">
+                <div class="d1"><img src="slike/singl1.jpg" class="slika">
+                    <br>
+                   <p class="opis">Cena: 20000 RSD</p>
+                   <br>
+                   <p class="opis">Šifra za naručivanje: S1</p>
+                  
+                   
+                </div>
+                <div class="d2"><img src="slike/singl2.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 30000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: S2</p>
+                </div>
+                <div class="d3"><img src="slike/singl3.jpg" class="slika">
+                    <br>
+                    <p class="opis">Cena: 45000 RSD</p>
+                    <br>
+                    <p class="opis">Šifra za naručivanje: S3</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="div-1">
+            <h1 class="formtitle">Forma za poručivanje</h1>
+            <form name="forma" onsubmit="return validirajFormu()" id="formaPor">
+                <label for="imePrezime">Ime i prezime:</label>
+                <br>
+                <input type="text" id="imePrezime">
+                <br>
+                <label for="mail">Mail:</label>
+                <br>
+                <input type="text" id="mail">
+                <br>
+                <label for="sifra">Šifra artikla:</label>
+                <br>
+                <select name="sifra" id="sifra">
+                  <option value="kl1">KL1</option>
+                  <option value="kl2">KL2</option>
+                  <option value="kl3">KL3</option>
+                  <option value="ql1">QL1</option>
+                  <option value="ql2">QL2</option>
+                  <option value="ql3">QL3</option>
+                  <option value="s1">S1</option>
+                  <option value="s2">S2</option>
+                  <option value="s3">S3</option>
+                 </select>
+                <br>
+                <label for="adresa">Adresa:</label>
+                <br>
+                <input type="text" id="adresa">
+                <br>
+                <label for="velicina">Visina dušeka:</label>
+                <br>
+                <input type="radio" id="velika" name="velicina" value="large" checked>
+                <label for="large">30 cm</label><br>
+                <input type="radio" id="srednja" name="velicina" value="medium">
+                <label for="medium">26cm</label>
+                <br>
+                <input type="radio" id="mala" name="velicina" value="small">
+                <label for="small">22cm</label>
+                <br>
+                <span>Željeni nacin placanja</span>
+                <select name="nacinPlacanja" id="nacinPlacanja">
+                    <option value="pouzece">Plaćanje pouzećem</option>
+                    <option value="kartica">Plaćanje karticom</option>
+                </select>
+                <br>
+                <input type="checkbox" id="zicano" name="zicano" value="zicano">
+                <label for="zicano"> Žičano jezgro</label>
+                <br>
+                <input type="checkbox" id="dupli" name="dupli" value="dupli">
+                <label for="dupli"> Dupli štep</label>
+                <br>
+                <label for="komentar">Dodatni komentar:</label>
+                <br>
+                <textarea name="komentar" id="" cols="40" rows="5"></textarea>
+                <br>
+                <input type="submit" value="Naruči" id="dugmeNaruci">
+                <input type="reset" value="Obriši" id="dugmeClear">
+                <br>
+                <label id="sakriveni-element" style="display:none">Uspešno obavljena kupovina</label>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/pocetna.js"></script>
+</body>
+
+</html>
