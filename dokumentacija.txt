@@ -1,0 +1,48 @@
+LINK ka github repozitorijumu: https://github.com/dule016/Domaci/tree/master
+
+Članovi tima: Dušan Nikolić 321/2018, Miloš Nikolić 131/2018.
+
+O SAJTU:
+
+Sajt izrađen za prodaju dušeka preduzeća "MATREX".
+4 veb strane su: 
+    1. Početna
+    2. Kontakt
+    3. Katalog
+    4. O Nama
+
+Slike, styles(sadrži css fajlove), i js fajl odvojeni po zahtevu u folderima.
+
+UPUTSTVO:
+    Korisnik je na početnoj i ima poruku koja ispod časovnika ga navodi da poseti katalog.
+    U katalogu može da izabere proizvod(dušek) koji može naručiti preko forme na dnu kataloga.
+    Svaki proizvod je određen šifrom i ima svoju cenu, a korisnik može uneti svoje ime i prezime,
+    mail, adresu, način plaćanja i iz padajuće liste izabrati proizvod preko šifre.
+    Na početnoj korisnik može pogledati i slideshow punjenja dušeka.
+    Strana kontakt sadrži i kalendar preko jquery plugina.
+    Na strani o nama može pročitati viziju i misiju preduzeća.
+
+Karakteristični zahtevi/delovi koda:
+
+    Pozicioniranje u katalogu je vršeno sa css grid, po zahtevu.
+    Forma poseduje polja text, buttons, radio, checkbox, select. Validacija forme obezbeđena u potpunosti
+    u vidu window alert u fajlu pocetna.js, koja obaveštava da li su popunjena obavezna polja i 
+    jesu li u dobro popunjena. U formi omogućeno da mejl mora imati @ znak.
+    Postoje i dugmad naruči i obriši kojima korisnik može da potvrdi porudžbinu ili obriše 
+    unete podatke.
+
+    Omugućen slideshow uz pomoć javascript koda takodje
+    Omugućen prikaz današnjeg dana na srpskom
+    Omugućen diginalni časovnik koji broji i sekunde sa vodećom nulom, zbog kojeg imamo 
+    i dodatnu funkciju koji ispituje da li je broj(čas,minut ili sekund) manji od deset.
+    Ove funkcionalnosti su u pocetna.js.
+
+    Meni je u nav baru horizontalno postavljen na svakoj stranici sa odgovarajucim linkovima.
+
+    Jquery plugin realizovan kroz datepicker/kalendar na dnu strane kontakt.
+    Da bi se strana pravilno učitala korišćena funkcija document ready jquery-ja kod plugina.
+    Kod časovnika korišćeno svojstvo innerHTML.
+       
+
+
+
