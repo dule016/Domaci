@@ -1,5 +1,8 @@
 LINK ka github repozitorijumu: https://github.com/dule016/Domaci/tree/master
 
+Hostovano preko GitHub Pages na: https://dule016.github.io/Domaci/
+
+
 Članovi tima: Dušan Nikolić 321/2018, Miloš Nikolić 131/2018.
 
 O SAJTU:
